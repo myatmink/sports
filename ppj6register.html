@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/ppj6register.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <p>WDF5 Sports <span>Academy</span></p>
+        </div>
+
+        <ul>
+            <li><a href="ppj6home.html"><span>Home</span><span>Home</span></a></li>
+            <li><a href="ppj6blog.html"><span>Blog</span><span>Blog</span></a></li>
+            <li><a href="ppj6newactivities.html"><span>New Activities</span><span>New Activities</span></a></li>
+            <li><a href="ppj6about.html"><span>About</span><span>About</span></a></li>
+            <li><a href="ppj6bookonline.html"><span>Book Online</span><span>Book Online</span></a></li>
+            <li><a href="ppj6register.html" class="reg active"><span>Register</span><span>Register</span></a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+
+        <div class="container">
+
+            <div class="title">Registration</div>
+
+            <form action="#">
+
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required />
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="Confirm your password" required />
+                    </div>
+
+                </div>
+
+                <div class="gender-details">
+                    
+                    <input type="radio" name="gender" id="dot-1" />
+                    <input type="radio" name="gender" id="dot-2" />
+                    <input type="radio" name="gender" id="dot-3" />
+
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>        
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>        
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>        
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <div class="f">
+
+            <div class="fl">
+                <h2>WDF5 Sports Academy</h2>
+                <ul>
+                    <li><a href="ppj6home.html" class="active">Home</a></li>
+                    <li><a href="ppj6blog.html">Blog</a></li>
+                    <li><a href="ppj6newactivities.html">New Activities</span></a></li>
+                    <li><a href="ppj6about.html">About</a></li>
+                    <li><a href="ppj6bookonline.html">Book Online</a></li>
+                    <li><a href="ppj6register.html">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="fr">
+                <div class="media">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-youtube-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <small>Copyrights &copy;<span id="year"></span></small>
+
+    </footer>
+
+
+    <script>
+
+        document.getElementById('year').textContent = new Date().getUTCFullYear();
+
+    </script>
+    
+</body>
+</html>

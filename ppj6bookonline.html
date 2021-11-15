@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online</title>
+    <link href="libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/ppj6bookonline.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <p>WDF5 Sports <span>Academy</span></p>
+        </div>
+
+        <ul>
+            <li><a href="ppj6home.html"><span>Home</span><span>Home</span></a></li>
+            <li><a href="ppj6blog.html"><span>Blog</span><span>Blog</span></a></li>
+            <li><a href="ppj6newactivities.html"><span>New Activities</span><span>New Activities</span></a></li>
+            <li><a href="ppj6about.html"><span>About</span><span>About</span></a></li>
+            <li><a href="ppj6bookonline.html" class="active"><span>Book Online</span><span>Book Online</span></a></li>
+            <li><a href="ppj6register.html" class="reg"><span>Register</span><span>Register</span></a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+
+        <div class="container">
+
+            <h1>Booking Form</h1>
+            <p>Book for courses via online</p>
+    
+            <form action="#">
+
+                <span class="title">Personal Information</span>
+    
+                <div class="personal">
+    
+                    <div class="input-box">
+                        <span>Name*</span>
+                        <input type="text" required />
+                    </div>
+                    <div class="input-box">
+                        <span>Date of Birth*</span>
+                        <input type="date" class="date" required />
+                    </div>
+                    <div class="input-box">
+                        <span>NRC Number*</span>
+                        <input type="text" required />
+                    </div>
+                    <div class="input-box">
+                        <span>Email*</span>
+                        <input type="email" required />
+                    </div>
+                    <div class="input-box">
+                        <span>Phone Number*</span>
+                        <input type="text" required />
+                    </div>
+                    <div class="input-box">
+                        <span>Address*</span>
+                        <input type="text" required />
+                    </div>
+    
+                </div>
+
+                <span class="title">Courses Information</span>
+    
+                <div class="other">
+    
+                    <div class="input-box">
+                        <span>Available Courses*</span>
+                        <select name="courses" required>
+                            <option selected disabled>Choose Courses</option>
+                            <option value="0">Football</option>
+                            <option value="1">Basketball</option>
+                            <option value="2">Tennis</option>
+                            <option value="3">Badminton</option>
+                            <option value="4">Swimming</option>
+                            <option value="5">Rugby</option>
+                            <option value="6">Ballet</option>
+                            <option value="7">Gymnastics</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span>Start Date*</span>
+                        <select name="date" required>
+                            <option selected disabled">Choose Start Date</option>
+                            <option value="0">25th November 2021</option>
+                            <option value="1">1st December 2021</option>
+                            <option value="2">17th December 2021</option>
+                            <option value="3">3rd January 2022</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span>Time*</span>
+                        <select name="time" required>
+                            <option selected disabled">Choose Time</option>
+                            <option value="0">7:30-9am</option>
+                            <option value="1">2:00-3:30pm</option>
+                            <option value="2">4:00-5:30pm</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="pay">Payment*</span>
+                        <input type="radio" name="pay" id="kbz" required checked /><label for="kbz">KBZ Pay</label>
+                        <input type="radio" name="pay" id="cb" required /><label for="cb">CB Pay</label>
+                        <input type="radio" name="pay" id="aya" required /><label for="aya">AYA Pay</label>
+                    </div>
+    
+                </div>
+    
+                <div class="button">
+                    <button onclick="alert('Booking Completed')" type="submit">Book Now</button>
+                </div>
+    
+            </form>
+    
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="f">
+
+            <div class="fl">
+                <h2>WDF5 Sports Academy</h2>
+                <ul>
+                    <li><a href="ppj6home.html" class="active">Home</a></li>
+                    <li><a href="ppj6blog.html">Blog</a></li>
+                    <li><a href="ppj6newactivities.html">New Activities</span></a></li>
+                    <li><a href="ppj6about.html">About</a></li>
+                    <li><a href="ppj6bookonline.html">Book Online</a></li>
+                    <li><a href="ppj6register.html">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="fr">
+                <div class="media">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-youtube-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <small>Copyrights &copy;<span id="year"></span></small>
+
+    </footer>
+
+
+    <script>
+
+        document.getElementById('year').textContent = new Date().getUTCFullYear();
+
+    </script>
+    
+</body>
+</html>

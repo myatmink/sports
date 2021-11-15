@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+
+    background-image: url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c446.072C90.62%2c454.636%2c188.444%2c461.578%2c265.505%2c413.133C342.787%2c364.549%2c363.862%2c265.871%2c410.994%2c187.695C465.26%2c97.685%2c574.818%2c23.476%2c563.419%2c-81.007C552.061%2c-185.115%2c430.897%2c-235.162%2c356.79%2c-309.16C288.73%2c-377.12%2c236.031%2c-463.495%2c146.132%2c-497.681C52.898%2c-533.135%2c-50.024%2c-523.958%2c-147.033%2c-500.748C-247.809%2c-476.637%2c-346.616%2c-437.267%2c-418.463%2c-362.6C-492.363%2c-285.8%2c-543.161%2c-185.605%2c-552.44%2c-79.429C-561.48%2c24.019%2c-529.133%2c129.56%2c-468.863%2c214.122C-413.835%2c291.33%2c-320.08%2c323.781%2c-235.099%2c365.822C-159.344%2c403.299%2c-84.143%2c438.12%2c0%2c446.072' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 1064.923C1538.901 1069.092 1655.467 1073.386 1724.074 1002.028 1793.129 930.204 1739.627 806.281 1777.338 714.057 1812.6390000000001 627.728 1931.8310000000001 582.24 1933.857 488.994 1935.872 396.253 1861.9479999999999 314.095 1787.224 259.128 1719.036 208.969 1625.632 228.204 1544.868 202.853 1461.936 176.82100000000003 1394.021 100.894 1307.435 108.52499999999998 1216.385 116.55000000000001 1136.724 176.288 1075.565 244.21499999999997 1013.712 312.913 982.816 401.148 962.729 491.379 941.3109999999999 587.588 917.345 690.366 956.065 781.006 995.088 872.355 1085.234 928.444 1170.912 978.71 1253.829 1027.356 1343.951 1060.874 1440 1064.923' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
+    
+}
+
+nav{
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+}
+
+nav .logo{
+    width: 250px;
+    height: 100%;
+    background-color: yellow;
+
+    position: absolute;
+    left: -20px;
+
+    cursor: pointer;
+
+    transform: skew(-30deg);
+}
+
+.logo p , .logo span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    line-height: 100%;
+    transform: skew(30deg);
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+nav ul{
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 10px;
+}
+
+ul li:first-child{
+    margin-left: 300px;
+}
+
+nav ul li a{
+    height: 50px;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    text-transform: uppercase;
+
+    padding: 0 10px;
+
+    overflow: hidden;
+}
+
+nav ul li a span{
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover:not(.reg) span{
+    transform: translateY(-100%);
+}
+
+nav ul li:last-child{
+    transform: skew(-20deg);
+    overflow: hidden;
+}
+
+.reg{
+    display: block;
+    background-color: #fff;
+    color: #000;
+    /* border-radius: 50px; */
+    padding: 0 10px;
+    transform: skew(20deg);
+}
+
+.reg:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content img{
+    width: 250px;
+    margin-left: -100px;
+    margin-top: -32px;
+}
+
+.title{
+    width: 350px;
+    margin: 100px 0 0 0px;
+}
+
+.title h1,.title span{
+    font-family: 'Oswald', sans-serif;
+    color: yellow;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.title span{
+    color: #fff;
+    
+}
+
+.title p{
+    font-family: 'Comfortaa', cursive;
+    color: #888;
+    margin: 20px 0 30px 0;
+}
+
+.title a{
+    text-decoration: none;
+    background-color: yellow;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+
+    transition: all 0.3s;
+}
+
+.title a:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.contact{
+    margin-top: 350px;
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    text-decoration: underline;
+}
+
+.contact > div a{
+    color: #888;
+    margin-right: 10px;
+}
+
+.contact > div a:hover{
+    color: #fff;
+}
